@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIF와 비디오</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+        img, video {
+            margin: 0px;
+            max-width: 45%; /* 화면 크기에 맞게 조정 */
+            height: auto; /* 비율 유지 */
+        }
+    </style>
+</head>
+<body>
+    <h1>GIF와 비디오 파일</h1>
+
+    <!-- 기존 GIF 이미지 -->
+    <img src="https://mblogvideo-phinf.pstatic.net/MjAyNDEwMjVfMjMg/MDAxNzI5ODUzMDc5MzU3.0mXtB9gEPO7VA-u5P4Zzwz83PfY44XrPlQz3UpZV6Q8g.dKxpobnUBsz_cdZ4Kv2m_RlVFylbZaa38LxvLZL2vtUg.GIF/%EB%A9%94%EC%9D%B8.gif?type=mp4w800" alt="GIF 이미지">
+
+    <!-- 새로운 비디오 삽입 (URL로 연결) -->
+    <video controls autoplay loop muted>
+        <source src="https://example.com/yourvideo.mp4" type="video/mp4">
+        <!-- 브라우저가 비디오 태그를 지원하지 않는 경우 -->
+        동영상을 재생할 수 없습니다.
+    </video>
+
+    <!-- 다른 JPG 이미지 -->
+    <img src="http://dlgnsrn0672.ivyro.net/images/공지 내용.jpg" alt="다른 JPG 이미지">
+</body>
+</html>
